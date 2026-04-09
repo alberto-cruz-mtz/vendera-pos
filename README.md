@@ -109,6 +109,39 @@ bun run dev
 wails build
 ```
 
+### Build para Windows (ejecutable e instalador)
+
+Comando directo (oficial Wails):
+
+```bash
+wails build -platform windows/amd64 -clean -o vendera-pos.exe
+```
+
+Para generar instalador NSIS:
+
+```bash
+wails build -platform windows/amd64 -clean -o vendera-pos.exe -nsis
+```
+
+Tambien tenes script listo para PowerShell:
+
+```powershell
+# Solo .exe
+./scripts/build-windows.ps1 -Arch amd64 -Clean
+
+# .exe + instalador NSIS
+./scripts/build-windows.ps1 -Arch amd64 -Clean -Installer
+
+# Estrategia WebView2 (download|embed|browser|error)
+./scripts/build-windows.ps1 -Arch amd64 -WebView2 embed -Installer
+```
+
+Notas:
+
+- El ejecutable se genera en `build/bin`.
+- Si usas `-Installer`, necesitas NSIS (`makensis.exe`) en `PATH`.
+- Metadata del instalador: se toma de `wails.json` (campo `Info`) y plantillas en `build/windows/installer`.
+
 ## Estado actual y roadmap
 
 > Tablero inicial basado en el alcance definido en `vendera.md`. Ajustar estados conforme avance la implementacion.
