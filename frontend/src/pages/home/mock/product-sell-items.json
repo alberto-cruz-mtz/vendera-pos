@@ -1,0 +1,162 @@
+[
+  {
+    "barcode": "7501000123451",
+    "description": "Arroz largo fino 1kg",
+    "salePrice": 32.5,
+    "quantity": 2,
+    "amount": 65,
+    "stock": 48
+  },
+  {
+    "barcode": "7501000123452",
+    "description": "Azucar refinada 1kg",
+    "salePrice": 29.9,
+    "quantity": 1,
+    "amount": 29.9,
+    "stock": 36
+  },
+  {
+    "barcode": "7501000123453",
+    "description": "Sal fina yodada 1kg",
+    "salePrice": 18,
+    "quantity": 3,
+    "amount": 54,
+    "stock": 62
+  },
+  {
+    "barcode": "7501000123454",
+    "description": "Aceite vegetal 900ml",
+    "salePrice": 44.5,
+    "quantity": 1,
+    "amount": 44.5,
+    "stock": 27
+  },
+  {
+    "barcode": "7501000123455",
+    "description": "Leche entera 1L",
+    "salePrice": 24.8,
+    "quantity": 4,
+    "amount": 99.2,
+    "stock": 55
+  },
+  {
+    "barcode": "7501000123456",
+    "description": "Pan de caja integral 680g",
+    "salePrice": 41,
+    "quantity": 1,
+    "amount": 41,
+    "stock": 18
+  },
+  {
+    "barcode": "7501000123457",
+    "description": "Atun en agua 140g",
+    "salePrice": 26.5,
+    "quantity": 2,
+    "amount": 53,
+    "stock": 44
+  },
+  {
+    "barcode": "7501000123458",
+    "description": "Frijol negro 900g",
+    "salePrice": 33.2,
+    "quantity": 2,
+    "amount": 66.4,
+    "stock": 31
+  },
+  {
+    "barcode": "7501000123459",
+    "description": "Pasta spaghetti 200g",
+    "salePrice": 14.5,
+    "quantity": 5,
+    "amount": 72.5,
+    "stock": 70
+  },
+  {
+    "barcode": "7501000123460",
+    "description": "Salsa de tomate 210g",
+    "salePrice": 12.9,
+    "quantity": 3,
+    "amount": 38.7,
+    "stock": 58
+  },
+  {
+    "barcode": "7501000123461",
+    "description": "Cereal de maiz 500g",
+    "salePrice": 56,
+    "quantity": 1,
+    "amount": 56,
+    "stock": 22
+  },
+  {
+    "barcode": "7501000123462",
+    "description": "Galletas de vainilla 170g",
+    "salePrice": 19.5,
+    "quantity": 2,
+    "amount": 39,
+    "stock": 47
+  },
+  {
+    "barcode": "7501000123463",
+    "description": "Cafe molido clasico 225g",
+    "salePrice": 78.9,
+    "quantity": 1,
+    "amount": 78.9,
+    "stock": 16
+  },
+  {
+    "barcode": "7501000123464",
+    "description": "Te de manzanilla 25 sobres",
+    "salePrice": 34.7,
+    "quantity": 2,
+    "amount": 69.4,
+    "stock": 29
+  },
+  {
+    "barcode": "7501000123465",
+    "description": "Jabon de tocador 3 pack",
+    "salePrice": 27.3,
+    "quantity": 2,
+    "amount": 54.6,
+    "stock": 39
+  },
+  {
+    "barcode": "7501000123466",
+    "description": "Detergente en polvo 850g",
+    "salePrice": 49.9,
+    "quantity": 1,
+    "amount": 49.9,
+    "stock": 24
+  },
+  {
+    "barcode": "7501000123467",
+    "description": "Papel higienico 4 rollos",
+    "salePrice": 36.8,
+    "quantity": 3,
+    "amount": 110.4,
+    "stock": 42
+  },
+  {
+    "barcode": "7501000123468",
+    "description": "Shampoo hidratante 750ml",
+    "salePrice": 64.2,
+    "quantity": 1,
+    "amount": 64.2,
+    "stock": 20
+  },
+  {
+    "barcode": "7501000123469",
+    "description": "Crema dental menta 100ml",
+    "salePrice": 22.4,
+    "quantity": 2,
+    "amount": 44.8,
+    "stock": 53
+  },
+  {
+    "barcode": "7501000123470",
+    "description": "Agua mineral 1.5L",
+    "salePrice": 16.2,
+    "quantity": 6,
+    "amount": 97.2,
+    "stock": 80
+  }
+]

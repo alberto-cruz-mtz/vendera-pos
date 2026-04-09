@@ -6,6 +6,10 @@ import {
   TableRow,
   TableCell,
 } from "@heroui/react";
+import type { ProductSellItem } from "src/types/product";
+import mockProducts from "./../../mock/product-sell-items.json";
+
+const products: ProductSellItem[] = mockProducts;
 
 export const SellTable = () => {
   return (
@@ -22,26 +26,34 @@ export const SellTable = () => {
         th: "rounded-none h-8",
       }}
     >
-      <TableHeader>
-        <TableColumn>Codigo de barras</TableColumn>
-        <TableColumn>Descripcion</TableColumn>
-        <TableColumn>Precio de venta</TableColumn>
-        <TableColumn>Cant.</TableColumn>
-        <TableColumn>Importe</TableColumn>
-        <TableColumn>Existencia</TableColumn>
+      <TableHeader columns={COLUMNS}>
+        {({ label, key }) => <TableColumn key={key}>{label}</TableColumn>}
       </TableHeader>
-      <TableBody>
-        {Array.from({ length: 20 }, (_, i) => (
-          <TableRow key={i}>
-            <TableCell className="w-35">1234567890123</TableCell>
-            <TableCell>Producto de ejemplo</TableCell>
-            <TableCell className="w-35">$1.000,00</TableCell>
-            <TableCell className="w-20">2</TableCell>
-            <TableCell className="w-30">$2.000,00</TableCell>
-            <TableCell className="w-30">15</TableCell>
+      <TableBody items={products}>
+        {(item) => (
+          <TableRow key={item.barcode}>
+            <TableCell className="bg-primary-50 w-35">{item.barcode}</TableCell>
+            <TableCell>{item.description}</TableCell>
+            <TableCell className="w-30 slashed-zero tabular-nums">
+              ${item.salePrice}
+            </TableCell>
+            <TableCell className="w-30">{item.quantity}</TableCell>
+            <TableCell className="bg-success-50 w-30 slashed-zero tabular-nums">
+              ${item.amount}
+            </TableCell>
+            <TableCell className="w-30">{item.stock}</TableCell>
           </TableRow>
-        ))}
+        )}
       </TableBody>
     </Table>
   );
 };
+
+const COLUMNS = [
+  { key: "barcode", label: "Codigo de barras" },
+  { key: "description", label: "Descripcion" },
+  { key: "salePrice", label: "Precio de venta" },
+  { key: "quantity", label: "Cant." },
+  { key: "amount", label: "Importe" },
+  { key: "stock", label: "Existencia" },
+];

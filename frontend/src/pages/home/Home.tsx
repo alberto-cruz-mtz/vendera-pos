@@ -3,6 +3,7 @@ import Principal from "@layouts/Principal";
 import Footer from "./Footer";
 import Header from "./Header";
 import SellSection from "./SellSection";
+import { ModalHost } from "@components/modals/ModalHost";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <SellSection />
         <Footer />
       </Panel>
+      <ModalHost />
     </Principal>
   );
 }
